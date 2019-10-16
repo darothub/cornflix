@@ -1,0 +1,17 @@
+img{
+    height: 250px;
+    max-height: 280px;
+}
+
+.card-wrapper{
+    max-width: 100%;
+    background-color: red;
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.navbar-default{
+    background-color: white;
+}
