@@ -1,3 +1,6 @@
+$black : #000;
+$anchor-lemon: #8fdba3;
+
 img{
     height: 250px;
     max-height: 280px;
@@ -13,5 +16,16 @@ img{
 }
 
 .navbar-default{
-    background-color: white;
+    background-color: $black;
+}
+nav{
+    a{
+        color: $anchor-lemon;
+        font-weight: bold;
+    }
+}
+form{
+    input::placeholder{
+        color: $anchor-lemon;
+    }
 }
