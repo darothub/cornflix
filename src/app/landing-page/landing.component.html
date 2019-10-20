@@ -1,0 +1,23 @@
+<section class="jumbotron">
+    <h2>
+        CORNFLIX
+    </h2>
+    <!-- <ul *ngIf="movies">
+        <li *ngFor = "let movie of movies['results']">
+            <p class="movie.id">{{movie.title}}</p>
+        </li>
+
+    </ul> -->
+</section>
+
+    <div *ngIf="movies" class="container-fluid d-flex p-2 bd-highlight mb-3 flex-wrap  justify-content-between">
+        
+        <div *ngFor = "let movie of movies['results']" class="card d-block mb-3 " style="width: 18rem;">
+            <img src='https://image.tmdb.org/t/p/w500{{movie.poster_path}}' class="card-img-top" alt="Movie image">
+            <div  class="card-body">
+                <h5  class="card-title">{{movie.title}}</h5>
+                <p class="card-text">{{movie.release_date}}</p>
+                <a href="#" class="btn btn-primary">More details</a>
+            </div>
+        </div>
+    </div> 
