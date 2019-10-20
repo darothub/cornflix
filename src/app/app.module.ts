@@ -1,3 +1,4 @@
+import { CountClicks } from './landing-page/counter.directive';
 import { HttpClient } from '@angular/common/http';
 import { LandingPageModule } from './landing-page/landing.module';
 import { LandingPageComponent } from './landing-page/landing.component';
@@ -16,9 +17,13 @@ import { HttpClientModule } from '@angular/common/http'
 
 
 
-
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, LandingPageComponent],
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    LandingPageComponent,
+    CountClicks,
+  ],
   imports: [
     NavbarModule,
     BrowserModule,

@@ -1,8 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, Directive, HostListener } from '@angular/core';
 
 @Component({
   selector: "app-root",
-  templateUrl: './app.component.html',
+  template: `
+    <app-navbar></app-navbar>
+    <app-landing-page></app-landing-page>
+  `,
   styleUrls: ["./app.component.scss"]
 })
 export class AppComponent {
