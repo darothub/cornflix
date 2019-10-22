@@ -1,3 +1,4 @@
+import { LoginPageComponent } from './login-page/login-page.component';
 import { CountClicks } from './landing-page/counter.directive';
 import { HttpClient } from '@angular/common/http';
 import { LandingPageModule } from './landing-page/landing.module';
@@ -18,12 +19,14 @@ import { WebStorageModule } from "ngx-web-storage";
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     LandingPageComponent,
-    CountClicks
+    CountClicks,
+    LoginPageComponent
   ],
   imports: [
     NavbarModule,
