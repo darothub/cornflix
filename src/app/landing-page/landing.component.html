@@ -1,13 +1,8 @@
 <section class="jumbotron">
     <h2>
-        CORNFLIX
+       Welcome to {{title}}
     </h2>
-    <!-- <ul *ngIf="movies">
-        <li *ngFor = "let movie of movies['results']">
-            <p class="movie.id">{{movie.title}}</p>
-        </li>
 
-    </ul> -->
 </section>
 
 <div *ngIf="movies" class="container-fluid d-flex p-2 bd-highlight mb-3 flex-wrap  justify-content-between">
@@ -17,8 +12,8 @@
         <div  class="card-body">
             <h5  class="card-title">Title: {{movie.title}}</h5>
             <p class="card-text">Year: {{movie.release_date.slice(0, 4)}}</p>
-            <a href="#" class="btn btn-color" id={{movie.id}}>More details</a>
-            <a href="#" class="btn btn-color" #{{likeCounter}} id=#{{movie.id}} counting>Like {{likeCounter}}</a>
+            <a href="#/" class="btn btn-color" id={{movie.id}}>More details</a>
+            <a href="#/"   class="btn btn-color" #{{movie.id}} id=#{{movie.id}}  counting>Likes</a>
         </div>
     </div>
 </div> 

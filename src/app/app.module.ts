@@ -14,6 +14,7 @@ import { MDBBootstrapModule, NavbarModule } from "angular-bootstrap-md";
 import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HttpClientModule } from '@angular/common/http'
+import { WebStorageModule } from "ngx-web-storage";
 
 
 
@@ -22,7 +23,7 @@ import { HttpClientModule } from '@angular/common/http'
     AppComponent,
     NavbarComponent,
     LandingPageComponent,
-    CountClicks,
+    CountClicks
   ],
   imports: [
     NavbarModule,
@@ -30,7 +31,8 @@ import { HttpClientModule } from '@angular/common/http'
     BrowserAnimationsModule,
     MDBBootstrapModule.forRoot(),
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    WebStorageModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
