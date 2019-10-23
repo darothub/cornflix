@@ -17,25 +17,28 @@
       <!-- Links -->
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home
+          <a class="nav-link" href="#" (click)= "counting()" >Home{{counter}}
             <span class="sr-only">(current)</span>
           </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">New Movies</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Sign-up</a>
-        </li>
+        <ng-template [ngIf]="counter > 4" [ngIfElse]="none">
+          <li class="nav-item">
+            <a class="nav-link" href="#">New Movies</a>
+          </li>
+        </ng-template>
+        <ng-template #none>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sign-up</a>
+          </li>
+        </ng-template>
 
         <!-- Dropdown -->
 
       </ul>
       <!-- Links -->
-
       <form class="form-inline">
         <div class="md-form my-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <input class="form-control mr-sm-2"  type="text" placeholder="Search" aria-label="Search">
         </div>
       </form>
     </div>
@@ -43,54 +46,5 @@
 
   </nav>
   <!--/.Navbar-->
-  <!-- <div class="container-fluid d-flex p-2 bd-highlight mb-3 flex-wrap align-items-start justify-content-between">
-    
-    <div class="card d-block mb-3 " style="width: 18rem;">
-      <img src="../assets/images/img1.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Movie Title</h5>
-        <p class="card-text">Some quick example text to build on the Movie Title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-      <div class="card d-block mb-3" style="width: 18rem;">
-      <img src="../assets/images/image2.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Movie Title</h5>
-        <p class="card-text">Some quick example text to build on the Movie Title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-    <div class="card d-block mb-3 " style="width: 18rem;">
-      <img src="../assets/images/img1.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Movie Title</h5>
-        <p class="card-text">Some quick example text to build on the Movie Title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-    <div class="card d-block mb-3 " style="width: 18rem;">
-      <img src="../assets/images/img1.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Movie Title</h5>
-        <p class="card-text">Some quick example text to build on the Movie Title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div><div class="card d-block mb-3" style="width: 18rem;">
-      <img src="../assets/images/img1.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Movie Title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div><div class="card d-block mb-3" style="width: 18rem;">
-      <img src="../assets/images/img1.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-        
-  </div> -->
+  
 </section>

@@ -1,0 +1,36 @@
+$black : #000;
+$anchor-lemon: #8fdba3;
+
+img{
+    height: 250px;
+    max-height: 280px;
+}
+
+.card-wrapper{
+    max-width: 100%;
+    background-color: red;
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.navbar-default{
+    background-color: $black;
+}
+nav{
+    a{
+        color: $anchor-lemon;
+        font-weight: bold;
+    }
+}
+form{
+    input::placeholder{
+        color: $anchor-lemon;
+    }
+}
+
+p{
+    color: black;
+    font-size: 24px;
+}
