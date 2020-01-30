@@ -1,0 +1,50 @@
+<section class=" navbar-expand-lg">
+<!--Navbar-->
+  <nav class="navbar navbar-default navbar-expand-lg navbar-dark">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#">Cornflix</a>
+
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+      aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="basicExampleNav">
+
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#" (click)= "counting()" >Home{{counter}}
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <ng-template [ngIf]="counter > 4" [ngIfElse]="none">
+          <li class="nav-item">
+            <a class="nav-link" href="#">New Movies</a>
+          </li>
+        </ng-template>
+        <ng-template #none>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sign-up</a>
+          </li>
+        </ng-template>
+
+        <!-- Dropdown -->
+
+      </ul>
+      <!-- Links -->
+      <form class="form-inline">
+        <div class="md-form my-0">
+          <input class="form-control mr-sm-2"  type="text" placeholder="Search" aria-label="Search">
+        </div>
+      </form>
+    </div>
+    <!-- Collapsible content -->
+
+  </nav>
+  <!--/.Navbar-->
+  
+</section>
