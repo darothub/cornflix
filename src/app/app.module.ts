@@ -15,7 +15,7 @@ import { MDBBootstrapModule, NavbarModule } from "angular-bootstrap-md";
 import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HttpClientModule } from '@angular/common/http'
-import { WebStorageModule } from "ngx-web-storage";
+
 
 
 
@@ -34,8 +34,8 @@ import { WebStorageModule } from "ngx-web-storage";
     BrowserAnimationsModule,
     MDBBootstrapModule.forRoot(),
     FormsModule,
-    HttpClientModule,
-    WebStorageModule.forRoot()
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

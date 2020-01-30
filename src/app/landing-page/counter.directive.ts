@@ -2,13 +2,14 @@ import { Directive, HostListener, ElementRef } from "@angular/core";
 
 @Directive({ selector: "a[counting]" })
 export class CountClicks {
-  constructor(elr: ElementRef) {
-    elr.nativeElement.style.background = "pink";
-  }
   numberOfClicks = 1;
   number: any;
   store: any;
   getValue: any;
+  
+  constructor(elr: ElementRef) {
+    elr.nativeElement.style.background = "pink";
+  }
 
   @HostListener("click", ["$event.target"])
   onClick(a): void {

@@ -1,4 +1,3 @@
-import { CountClicks } from './counter.directive';
 import { HttpService } from './../http.service';
 import { Component, OnInit, ElementRef } from "@angular/core";
 
@@ -18,25 +17,10 @@ export class LandingPageComponent implements OnInit {
   ngOnInit() {
     this._http.getMovies().subscribe(data => {
       this.movies = data;
-      // for (let x of data['results']){
-      //   if(sessionStorage.getItem('#'+x.id) != null){
-      //     console.log("#" + x.id);
-      //     this.ids = sessionStorage.getItem("#" + x.id);
-      //     console.log(this.ids);
-      //   }
 
-      // }
-      // console.log(this.ids);
     });
-    this.storage = sessionStorage
-    console.log(this.storage)
+    // this.storage = sessionStorage
+    // console.log(this.storage)
   }
   
-  // ngAfterViewInit() {
-  //    var div = this.elRef.nativeElement;
-  //    console.log(div);
-  // }
-  // print(){
-  //   console.log(this)
-  // }
 }
