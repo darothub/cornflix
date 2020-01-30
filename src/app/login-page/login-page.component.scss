@@ -1,0 +1,16 @@
+$black: #000;
+$anchor-lemon: #8fdba3;
+.form-wrapper{
+    width:300px;
+    h3{
+         font-size: 30px;
+        font-weight: bold;
+        color: $anchor-lemon;
+        text-shadow: 1px 2px 3px #666;
+        text-align: center;
+    }
+    h1{
+     text-align: center;   
+     font-size: 30px;
+    }
+}
